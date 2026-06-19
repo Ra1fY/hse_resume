@@ -36,5 +36,5 @@ docker run --rm -v $(pwd):/output resume_builder sh -c "cd /app/CV && pdflatex -
 ---
 
 ## Контакты
-Email: alignatev@edu.hse.ru
+Email: alignatev@edu.hse.ru  
 Telegram: @yomayomamazvonit228
