@@ -13,15 +13,15 @@
 ---
 
 ## Структура репозитория
-├── .github/
-│ └── workflows/
-│ └── main.yml # CI: проверка сборки
-├── CV/
-│ ├── cv.tex # Резюме
-│ └── hse_logo.jpg # Логотип
-├── Dockerfile # Сборка через Docker
-├── choose_system.py # Выбор системы
-├── choose_reviewer.py # Выбор проверяющего
+├── .github/  
+│ └── workflows/  
+│ └── main.yml # CI: проверка сборки  
+├── CV/  
+│ ├── cv.tex # Резюме  
+│ └── hse_logo.jpg # Логотип  
+├── Dockerfile # Сборка через Docker  
+├── choose_system.py # Выбор системы  
+├── choose_reviewer.py # Выбор проверяющего  
 └── README.md
 
 ---
