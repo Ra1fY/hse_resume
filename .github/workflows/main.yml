@@ -18,13 +18,16 @@ jobs:
         run: docker build -t resume_builder .
 
       - name: Run container to build PDF
-        run: docker run --rm resume_builder
+        run: docker run --name resume_container resume_builder
+
+      - name: Copy PDF from container
+        run: docker cp resume_container:/app/CV/cv.pdf .
 
       - name: Verify PDF exists
-        run: test -f CV/cv.pdf && echo "✅ PDF built successfully!"
+        run: test -f cv.pdf && echo "✅ PDF built successfully!"
 
-      - name: Upload PDF as artifact (optional, but useful for debugging)
+      - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: CV/cv.pdf
+          path: cv.pdf
